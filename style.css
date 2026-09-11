@@ -4,7 +4,7 @@
 	--color-accent: #f59e0b;
 	--color-text: #1f2333;
 	--color-text-muted: #5b6072;
-	--color-bg: orange;
+	--color-bg: f7f7f7;
 	--color-surface: #ffffff; 
 	--color-border: #e7e7f0;
 
@@ -105,6 +105,41 @@ nav a:hover {
 	color: var(--color-text);
 }
 
+.btn {
+	display: inline-block;
+	border: none;
+	padding: 12px 28px;
+	border-radius: 999px;
+	font-family: var(--font-body);
+	font-weight: 600;
+	font-size: 1rem;
+	text-decoration: none;
+	cursor: pointer;
+	box-shadow: var(--shadow);
+	transition: background-color 0.2s ease,, transform 0.15s ease, box-shadow 0.2s ease;
+}
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: var(--shadow-hover);
+}
+.btn-primary {
+	background-color: var(--color-primary);
+	color: #fff;
+}
+.btn:primary: hover {
+	background-color: var(--color-primary-dark);
+}
+.btn-accent {
+	background-color: var(--color-accent);
+	color: #1f2333;
+}
+.about {
+
+	display: flex;
+	gap: 60px;
+	justify-content: center;
+	align-items: center;
+} 
 .about-text h2 {
 	text-align: left;
 }
@@ -310,8 +345,8 @@ footer {
 #sayHiform button {
 	align-self: center;
 }
-.forn-response {
-	min-height: 1.4em;
+.form-response {
+	min-height: 1.4rem;
 	margin-top: 4px;
 	margin-button: 0;
 	color: var(--color-text);
